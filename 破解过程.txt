@@ -1,0 +1,28 @@
+10.5版破解基本上同10.1版,但破解密钥和算法有所变化,经过本人的探讨和研究,更新了Crack程序,同时支持10.5和10.1版本的破解.下面是破解步骤:
+
+1. 输入Usercode, 点击'SystemId...', 生成SystemId
+
+2. 点击'Active', 生成LICENSE_KEY, ACTIVATION_CODE, ACTIVATION_KEY
+
+3. 点击菜单'Tools -> 2.SaveProperties...', 
+   目的是把生成的LICENSE_KEY, ACTIVATION_CODE, ACTIVATION_KEY保存到C:\Documents and Settings\Administrator\.myeclipse.properties文件中
+
+4. 点击菜单'Tools -> 1.ReplaceJarFile', 选择${eclipse_home}/plugins目录, 等待30秒左右.
+   目的是:
+	Replacing [SignatureVerifier <before MyEclipse 10.5>].
+	Done.
+	Replacing [publicKey.bytes].
+		replacing file [${eclipse_home}\plugins\com.genuitec.eclipse.core_10.5.0.me201206170059.jar] and create bakFile [${eclipse_home}\plugins\com.genuitec.eclipse.core_10.5.0.me201206170059.jar.bak20120623123135]
+		    update [com/genuitec/eclipse/core/publicKey.bytes]
+	Done.
+	Replacing [SpecialSignatureVerifier<for MyEclipse.10.5>].
+		replacing file [${eclipse_home}\plugins\com.genuitec.eclipse.core.common_10.5.0.me201206160414.jar] and create bakFile [${eclipse_home}\plugins\com.genuitec.eclipse.core.common_10.5.0.me201206160414.jar.bak20120623123142]
+		    update [com/genuitec/eclipse/core/ui/preference/MECPListContentProvider.class]
+		replacing file [${eclipse_home}\plugins\com.genuitec.eclipse.easie.core_9.0.0.me201203160414\easiecore.jar] and create bakFile [${eclipse_home}\plugins\com.genuitec.eclipse.easie.core_9.0.0.me201203160414\easiecore.jar.bak20120623123143]
+		    update [com/genuitec/eclipse/easie/core/ui/action/ServerValidateAction.class]
+		replacing file [${eclipse_home}\plugins\com.genuitec.eclipse.j2eedt.core_10.0.0.me201203160414\j2eedtcore.jar] and create bakFile [${eclipse_home}\plugins\com.genuitec.eclipse.j2eedt.core_10.0.0.me201203160414\j2eedtcore.jar.bak20120623123146]
+		    update [com/genuitec/eclipse/j2eedt/taglib/TagLibReader.class]
+		replacing file [${eclipse_home}\plugins\com.genuitec.myeclipse.product_10.5.0.me201206160414\myeclipse-product.jar] and create bakFile [${eclipse_home}\plugins\com.genuitec.myeclipse.product_10.5.0.me201206160414\myeclipse-product.jar.bak20120623123147]
+		    update [com/genuitec/myeclipse/product/ProductViewer.class]
+			    
+执行以上4个步骤,破解成功.
